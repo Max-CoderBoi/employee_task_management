@@ -1,4 +1,5 @@
 import React from 'react'
+import { LogOut } from 'lucide-react' // optional icon if using lucide-react or similar
 
 const Header = ({ changeUser, data }) => {
   const username = data ? data.firstName : 'Admin'
@@ -9,17 +10,21 @@ const Header = ({ changeUser, data }) => {
   }
 
   return (
-    <div className="bg-[#1c1c1c] rounded-xl shadow-md px-6 py-5 mb-6 flex items-center justify-between">
-      <div>
-        <h1 className="text-lg text-gray-400">Welcome back,</h1>
-        <h2 className="text-3xl font-bold text-white mt-1">{username} 👋</h2>
+    <div className="bg-[#1c1c1c] rounded-xl shadow-lg px-8 py-6 mb-6 flex items-center justify-between">
+      {/* Welcome Section */}
+      <div className="space-y-1">
+        <p className="text-sm text-gray-400">Welcome back,</p>
+        <h1 className="text-3xl font-bold text-white">
+          {username} <span className="wave">👋</span>
+        </h1>
       </div>
 
+      {/* Log Out Button */}
       <button
         onClick={logOutUser}
-        className="bg-red-600 hover:bg-red-700 transition-colors duration-200 text-white font-semibold text-sm px-6 py-2 rounded-md shadow"
+        className="flex items-center gap-2 bg-red-600 hover:bg-red-700 active:scale-95 transition-all duration-200 text-white font-semibold text-sm px-5 py-2 rounded-md shadow-md"
       >
-        Log Out
+        <LogOut className="w-4 h-4" /> Log Out
       </button>
     </div>
   )
