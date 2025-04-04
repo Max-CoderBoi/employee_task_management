@@ -37,7 +37,9 @@ const AcceptTask = ({ data, onUpdateTask }) => {
       <h2 className="mt-3 text-xl font-bold leading-tight">
         {data.taskTitle || 'Untitled Task'}
       </h2>
-      <p className="text-sm mt-2 opacity-90">
+
+      {/* Description now unrestricted */}
+      <p className="mt-2 leading-relaxed">
         {data.taskDescription || 'No description provided.'}
       </p>
 

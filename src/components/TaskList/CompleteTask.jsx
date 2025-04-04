@@ -29,7 +29,8 @@ const CompleteTask = ({ data, onUpdateTask }) => {
         {data.taskTitle || 'Untitled Task'}
       </h2>
 
-      <p className="text-sm mt-2 opacity-90">
+      {/* ✅ Unrestricted full description */}
+      <p className="mt-2 leading-relaxed">
         {data.taskDescription || 'No description provided.'}
       </p>
 
