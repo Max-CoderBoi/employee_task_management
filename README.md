@@ -1,18 +1,38 @@
 # 🧑‍💼 Employee Management System
 
-A modern web-based Employee Management System built using **React**, **Tailwind CSS**, and **Vite**. This system allows management of tasks assigned to employees with status tracking like New, Active, Completed, and Failed.
+A sleek and modern **web-based** Employee Management System built with **React**, **Tailwind CSS**, and **Vite**.  
+Easily manage and track tasks assigned to employees with intuitive status updates like **New**, **Active**, **Completed**, and **Failed**.
+
+---
 
 ## 🚀 Features
 
-- 📋 Task categorization: New, Active, Completed, Failed
-- 🎯 Status update handling for each task
-- 🔁 Live UI updates using `useState` and `useEffect`
-- 🎨 Fully responsive UI with Tailwind CSS
-- ⚡ Fast development experience with Vite
+✨ Stay organized and efficient with these powerful features:
 
-## 🛠️ Technologies Used
+- 📋 **Task Categorization**  
+  Sort tasks into **New**, **Active**, **Completed**, and **Failed**.
 
-- React
-- Tailwind CSS
-- Vite
-- JavaScript (ES6+)
+- 🔄 **Dynamic Status Updates**  
+  Seamlessly update task statuses using React's `useState` and `useEffect`.
+
+- 💻 **Responsive Design**  
+  Clean, mobile-friendly UI powered by **Tailwind CSS**.
+
+- ⚡ **Blazing Fast Development**  
+  Powered by **Vite** for an ultra-fast development experience.
+
+---
+
+## 🛠️ Tech Stack
+
+Built using the latest web technologies:
+
+- ⚛️ **React** – Component-based UI development  
+- 🎨 **Tailwind CSS** – Utility-first CSS framework  
+- ⚡ **Vite** – Lightning-fast frontend tooling  
+- 🧠 **JavaScript (ES6+)** – Modern scripting
+
+---
+
+## 📂 Folder Structure (Optional)
+
