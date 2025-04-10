@@ -34,5 +34,5 @@ Built using the latest web technologies:
 
 ---
 
-## 📂 Folder Structure (Optional)
+
 
