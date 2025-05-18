@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧑‍💼 Employee Management System
 
 A sleek and modern **web-based** Employee Management System built with **React**, **Tailwind CSS**, and **Vite**.  
@@ -36,3 +37,6 @@ Built using the latest web technologies:
 
 
 
+=======
+# employee_task_management
+>>>>>>> b299c5ce0694b0d7ee85613ddd0c4712842d2e35
