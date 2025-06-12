@@ -3,6 +3,8 @@
 A sleek and modern **web-based** Employee Management System built with **React**, **Tailwind CSS**, and **Vite**.  
 Easily manage and track tasks assigned to employees with intuitive status updates like **New**, **Active**, **Completed**, and **Failed**.
 
+🌐 **Live Demo**: [employee-management-system-tawny-omega.vercel.app](https://employee-management-system-tawny-omega.vercel.app/)
+
 ---
 
 ## 🚀 Features
@@ -39,6 +41,5 @@ Developed with the software and tools below.
 </p>
 
 ---
-
 
 
