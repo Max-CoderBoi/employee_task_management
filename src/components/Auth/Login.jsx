@@ -55,6 +55,9 @@ const Login = ({ handleLogin }) => {
         <p className="text-sm text-gray-300 text-center mt-6">
           Admin Login 👉 <span className="text-white font-medium">admin@me.com / 123</span>
         </p>
+        <p className="text-sm text-gray-300 text-center mt-6">
+          employee Login 👉 <span className="text-white font-medium">e@e.com / 123</span>
+        </p>
       </div>
     </div>
   );

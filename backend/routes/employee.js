@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
 const Employee = require('../models/EmployeeModel'); // correct path
 
 // Create a new Employee
@@ -26,7 +27,8 @@ router.get('/', async (req, res) => {
 // Get Employee by ID
 router.get('/:id', async (req, res) => {
   try {
-    const employee = await Employee.findOne({ id: req.params.id });
+    // Using findById with req.params.id
+    const employee = await Employee.findById(req.params.id);
     if (!employee) return res.status(404).json({ message: 'Employee not found' });
     res.json(employee);
   } catch (error) {
@@ -37,8 +39,9 @@ router.get('/:id', async (req, res) => {
 // Update Employee by ID
 router.put('/:id', async (req, res) => {
   try {
-    const employee = await Employee.findOneAndUpdate(
-      { id: req.params.id },
+    // Using findByIdAndUpdate with req.params.id
+    const employee = await Employee.findByIdAndUpdate(
+      req.params.id,
       req.body,
       { new: true, runValidators: true }
     );
@@ -52,7 +55,8 @@ router.put('/:id', async (req, res) => {
 // Delete Employee by ID
 router.delete('/:id', async (req, res) => {
   try {
-    const employee = await Employee.findOneAndDelete({ id: req.params.id });
+    // Using findByIdAndDelete with req.params.id
+    const employee = await Employee.findByIdAndDelete(req.params.id);
     if (!employee) return res.status(404).json({ message: 'Employee not found' });
     res.json({ message: 'Employee deleted successfully' });
   } catch (error) {
