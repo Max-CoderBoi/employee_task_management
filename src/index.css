@@ -2,17 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* General dark theme setup */
+body {
+  background-color: #111;
   color: #fff;
 }
-body{
-  background-color: #111;
+
+/* Smooth custom scrollbar for task list */
+#tasklist::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
 }
-#tasklist::-webkit-scrollbar{
-    background-color: transparent;
-    height: 5px;
-}
-#tasklist::-webkit-scrollbar-thumb{
+#tasklist::-webkit-scrollbar-thumb {
   background-color: rgb(143, 143, 143);
   border-radius: 50px;
 }
+#tasklist::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+@keyframes glow-card {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.2);
+  }
+}
+
+.shine-effect {
+  animation: glow-card 2s infinite ease-in-out;
+}
+
