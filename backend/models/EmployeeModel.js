@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Task schema (nested inside Employee)
+
 const taskSchema = new mongoose.Schema({
   active: {
     type: Boolean,
