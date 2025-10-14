@@ -37,11 +37,11 @@ const taskSchema = new mongoose.Schema({
   category: {
     type: String,
     required: true
-    // Optionally: enum: ['Development', 'Testing', 'Design', 'Management']
+   
   }
-}, { _id: false });  // Prevent automatic _id for each task
+}, { _id: false }); 
 
-// TaskCounts schema (nested inside Employee)
+
 const taskCountsSchema = new mongoose.Schema({
   active: {
     type: Number,
