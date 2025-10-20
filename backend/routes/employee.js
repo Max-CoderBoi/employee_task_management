@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const Employee = require('../models/EmployeeModel'); // correct path
+const Employee = require('../models/EmployeeModel'); 
 
 // Create a new Employee
 router.post('/', async (req, res) => {
