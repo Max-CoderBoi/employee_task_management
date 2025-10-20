@@ -5,6 +5,7 @@ const Employee = require('../models/EmployeeModel');
 
 // Create a new Employee
 router.post('/', async (req, res) => {
+  
   try {
     const employee = new Employee(req.body);
     await employee.save();
@@ -12,20 +13,24 @@ router.post('/', async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
+  
 });
 
 // Get all Employees
 router.get('/', async (req, res) => {
+  
   try {
     const employees = await Employee.find();
     res.json(employees);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
+  
 });
 
 // Get Employee by ID
 router.get('/:id', async (req, res) => {
+  
   try {
     // Using findById with req.params.id
     const employee = await Employee.findById(req.params.id);
@@ -33,6 +38,7 @@ router.get('/:id', async (req, res) => {
     res.json(employee);
   } catch (error) {
     res.status(500).json({ message: error.message });
+    
   }
 });
 
